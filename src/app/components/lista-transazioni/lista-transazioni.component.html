@@ -1,0 +1,5 @@
+
+<div class="list-group container">
+    <h1>LISTA TRANSAZIONI</h1>
+    <app-singola-transazione class="list-group-item" *ngFor="let t of transazioni" [transazione]="t" [ngClass]="{'verde':t.type=='invoice', 'grigio':t.type=='withdrawal'}"></app-singola-transazione>
+</div>
